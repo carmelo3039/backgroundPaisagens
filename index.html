@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <meta name="theme-color" content="#10151d" />
+        <title>Horizontes — Galeria</title>
+    </head>
+
+    <body>
+        <main class="gallery">
+            <header class="gallery__intro">
+                <p class="gallery__eyebrow">GALERIA</p>
+                <h1>Horizontes</h1>
+                <p class="gallery__description">Uma coleção de lugares para inspirar sua próxima jornada.</p>
+            </header>
+
+            <section class="gallery__viewer" aria-label="Galeria de paisagens">
+                <div class="slider-container" id="slider" role="group" aria-roledescription="carrossel" aria-label="Paisagens">
+                    <div class="slide active" aria-hidden="false">
+                        <img src="./images/slide-1.jpg" alt="Paisagem em destaque, imagem 1" fetchpriority="high" />
+                    </div>
+                    <div class="slide" aria-hidden="true">
+                        <img src="./images/slide-2.jpg" alt="Paisagem em destaque, imagem 2" loading="lazy" />
+                    </div>
+                    <div class="slide" aria-hidden="true">
+                        <img src="./images/slide-3.jpg" alt="Paisagem em destaque, imagem 3" loading="lazy" />
+                    </div>
+                    <div class="slide" aria-hidden="true">
+                        <img src="./images/slide-4.jpg" alt="Paisagem em destaque, imagem 4" loading="lazy" />
+                    </div>
+                    <div class="slide" aria-hidden="true">
+                        <img src="./images/slide-5.jpg" alt="Paisagem em destaque, imagem 5" loading="lazy" />
+                    </div>
+
+                    <button class="arrow arrow--previous" id="previous" type="button" aria-label="Slide anterior">
+                        <span aria-hidden="true">&larr;</span>
+                    </button>
+                    <button class="arrow arrow--next" id="next" type="button" aria-label="Próximo slide">
+                        <span aria-hidden="true">&rarr;</span>
+                    </button>
+                </div>
+
+                <footer class="gallery__controls">
+                    <span class="slide-counter" id="slide-counter" aria-live="polite" aria-atomic="true"></span>
+                    <nav class="slide-indicators" id="slide-indicators" aria-label="Escolher slide"></nav>
+                    <span class="gallery__hint">USE &larr; &rarr;</span>
+                </footer>
+            </section>
+
+            <p class="gallery__signature">DESCUBRA. RESPIRE. EXPLORE.</p>
+        </main>
+
+        <script src="app.js"></script>
+    </body>
+</html>
